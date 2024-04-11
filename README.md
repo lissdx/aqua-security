@@ -11,13 +11,14 @@
    run `make local_db_up` or `docker-compose -f docker-compose-pg.yml up -d`
 2. Start the monitoring app
    1. Easiest way
-   run `make run_monitoring` or `docker-compose -f as-monitoring.yml up -d`
-   NOTE: make sure that your mounted dir existed (check [as-monitoring.yml](as-monitoring.yml))
+   run `make run_monitoring` or `docker-compose -f as-monitoring.yml up -d`  
+   NOTE: make sure that your mounted dir existed (check [as-monitoring.yml](as-monitoring.yml))  
    for example run `mkdir -p test_dir/input && mkdir -p test_dir/output`
    2. Another way
-      1. For the first time run you should init the DB
-      so run the _aqua-security/cmd/migration/migration.go_
-      2. Run the monitoring app _aqua-security/cmd/monitoring/monitoring.go_
+      1. For the first time run you should init the DB so run the     
+      _aqua-security/cmd/migration/migration.go_
+      2. Run the monitoring app   
+      _aqua-security/cmd/monitoring/monitoring.go_  
       NOTE: before you start the monitoring app please export env (or set in your IDE)
       ```
       export GO_ENV=development_local
@@ -44,9 +45,9 @@
 #### DB Insert/Upsert Policy Important Points
 see [as_sql.sql](db/query/as_sql.sql)
 1. table **input_repository**
-   - the row will be updated if **last_push** is highest 
+   - the row will be updated if **last_push** is highest  
      (input_repository.last_push & input_repository.size fields will be updated only)
-2. **"input_images"** the row will NOT be updated at all except the field _repository_id_  
+2. **"input_images"** the row will NOT be updated at all except the field _repository_id_   
    this one can be updated with connections[*].json
 3. **scan** 
    - will NOT be updated at all exclude the field _is_reported_  
