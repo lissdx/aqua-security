@@ -1,0 +1,41 @@
+[
+  {
+    "scan_id": 1,
+    "id": "10000000-0000-0000-0000-000000000000",
+    "name": "10000000-repo",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "source": "github",
+    "last_push": "2023-01-01T12:00:00Z",
+    "size": 1234567890,
+    "highest_severity": "medium",
+    "total_findings": 111,
+    "scan_date_timestamp": "2023-11-07T10:22:05Z",
+    "created_date_timestamp": "2023-11-07T12:07:14Z"
+  },
+  {
+    "scan_id": 2,
+    "id": "10000000-0000-0000-0000-000000000000",
+    "name": "10000000-repo",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "source": "github",
+    "last_push": "2023-01-01T12:00:00Z",
+    "size": 1234567890,
+    "highest_severity": "medium",
+    "total_findings": 111,
+    "scan_date_timestamp": "1975-05-21T20:19:15Z",
+    "created_date_timestamp": "2023-11-07T12:07:14Z"
+  },
+  {
+    "scan_id": 22,
+    "id": "20000000-0000-0000-0000-000000000000",
+    "name": "20000000-repo",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "source": "gitlab",
+    "last_push": "2024-01-01T12:00:00Z",
+    "size": 3333333333,
+    "highest_severity": "medium",
+    "total_findings": 111,
+    "scan_date_timestamp": "1975-05-21T20:19:15Z",
+    "created_date_timestamp": "2023-11-07T12:07:14Z"
+  }
+]

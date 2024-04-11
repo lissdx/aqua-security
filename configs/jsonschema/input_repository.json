@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "created_date_timestamp",
+    "type",
+    "source",
+    "last_push",
+    "size"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "url": {
+      "type": "string",
+      "default": "",
+      "format": "uri"
+    },
+    "created_date_timestamp": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "repository"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "github",
+        "bitbucket",
+        "gitlab"
+      ]
+    },
+    "last_push": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "size": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

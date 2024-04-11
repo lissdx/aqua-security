@@ -1,0 +1,96 @@
+[
+  {
+    "id": "10000000-0000-0000-0000-000000000000",
+    "name": "10000000-repo",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "created_date_timestamp": 1699358834,
+    "type": "repository",
+    "source": "github",
+    "last_push": "2023-01-01T12:00:00Z",
+    "size": 1234567890
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000000",
+    "name": "20000000-repo",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "created_date_timestamp": 1699358834,
+    "type": "repository",
+    "source": "gitlab",
+    "last_push": "2023-01-01T12:00:00Z",
+    "size": 1234567890
+  },
+    {
+    "id": "30000000-0000-0000-0000-000000000000",
+    "name": "30000000-repo-has-no-image",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "created_date_timestamp": 1699358834,
+    "type": "repository",
+    "source": "gitlab",
+    "last_push": "2023-01-01T12:00:00Z",
+    "size": 1234567890
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000000",
+    "name": "20000000-repo-replece-push-size",
+    "url": "https://github.com/my-org/my-awesome-repo",
+    "created_date_timestamp": 1699358834,
+    "type": "repository",
+    "source": "gitlab",
+    "last_push": "2024-01-01T12:00:00Z",
+    "size": 3333333333
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000001",
+    "name": "my-10000000.1-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "created_date_timestamp": 1699352316,
+    "type": "image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm"
+  },
+  {
+    "id": "10000000-0000-0000-0000-000000000002",
+    "name": "my-10000000.2-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "created_date_timestamp": 1699352900,
+    "type": "image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm"
+  },
+  {
+    "id": "20000000-0000-0000-0000-000000000001",
+    "name": "my-20000000.1-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "created_date_timestamp": 1699352900,
+    "type": "image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm"
+  },    
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "name": "my-00000000.3-image-has-no-repository",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "created_date_timestamp": 1699352316,
+    "type": "image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm"
+  },
+  {
+    "id": "143f7e71-7d5f-4f1d-b99e-ab652c17b7e2",
+    "name": "my-workload",
+    "type": "workload"
+  },
+  {
+    "id": "33333333-0000-0000-0000-000000000000",
+    "name": "repo-wrong-source",
+    "url": "https://1234567890.dkr.ecr.us-east-1.amazonaws.com/my-third-repo:1.1",
+    "created_date_timestamp": 1699366014,
+    "type": "repository",
+    "source": "aws",
+    "last_push": "2023-12-07T14:00:00Z"
+  }       
+]

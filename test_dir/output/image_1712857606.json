@@ -1,0 +1,44 @@
+[
+  {
+    "scan_id": 3,
+    "id": "10000000-0000-0000-0000-000000000001",
+    "name": "my-10000000.1-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm",
+    "connected_repository_id": "10000000-0000-0000-0000-000000000000",
+    "highest_severity": "medium",
+    "total_findings": 1111,
+    "scan_date_timestamp": "1975-05-21T20:19:15Z",
+    "created_date_timestamp": "2023-11-07T10:18:36Z"
+  },
+  {
+    "scan_id": 4,
+    "id": "10000000-0000-0000-0000-000000000002",
+    "name": "my-10000000.2-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm",
+    "connected_repository_id": "10000000-0000-0000-0000-000000000000",
+    "highest_severity": "medium",
+    "total_findings": 1222,
+    "scan_date_timestamp": "1975-05-21T20:19:15Z",
+    "created_date_timestamp": "2023-11-07T10:28:20Z"
+  },
+  {
+    "scan_id": 5,
+    "id": "00000000-0000-0000-0000-000000000003",
+    "name": "my-00000000.3-image-has-no-repository",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "source": "dockerhub",
+    "number_of_layers": 3,
+    "architecture": "arm",
+    "connected_repository_id": null,
+    "highest_severity": "medium",
+    "total_findings": 333,
+    "scan_date_timestamp": "1975-05-21T20:19:15Z",
+    "created_date_timestamp": "2023-11-07T10:18:36Z"
+  }
+]

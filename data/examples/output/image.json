@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1802c7b7-572c-4fab-b602-3cad7e672dbd",
+    "scan_id": 456,
+    "highest_severity": "medium",
+    "total_findings": 2,
+    "scan_date_timestamp": 1699352525,
+    "updated_date_timestamp": 1701950834
+  },
+  {
+    "id": "4af8679b-ec97-4067-b3ae-a81577eb585e",
+    "updated_date_timestamp": 1701950834,
+    "connected_repository_id": "7bb72d11-3adb-47fd-a90c-9896a8556183"
+  },
+  {
+    "id": "9b3dee35-aa47-40eb-8d8b-2e23bf7cbbcf",
+    "name": "my-first-image",
+    "url": "https://dockerhub.com/my-org/my-first-image",
+    "created_date_timestamp": 1699352316,
+    "number_of_layers": 3,
+    "architecture": "arm",
+    "updated_date_timestamp": 1701950834,
+    "scan_id": 321,
+    "highest_severity": "low",
+    "total_findings": 1,
+    "scan_date_timestamp": 1699352325,
+    "source": "dockerhub",
+    "connected_repository_id": "550e8400-e29b-41d4-a716-446655440000"
+  }
+]

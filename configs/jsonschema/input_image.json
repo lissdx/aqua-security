@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "url",
+    "created_date_timestamp",
+    "type",
+    "number_of_layers",
+    "architecture",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "created_date_timestamp": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "image"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "dockerhub",
+        "ecr",
+        "jfrog"
+      ]
+    },
+    "architecture": {
+      "type": "string",
+      "enum": [
+        "arm",
+        "amd"
+      ]
+    },
+    "number_of_layers": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

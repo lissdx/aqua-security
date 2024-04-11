@@ -1,0 +1,20 @@
+---
+version: '3.5'
+services:
+  to-conductor:
+    platform: linux/x86_64
+    image: yuril/as:latest
+    environment:
+      - GO_ENV=development_local
+      - PROCESS_CONF_SUB_FOLDER=monitoring-process
+      - PROCESS_NAME=DATA_UPDATER
+      - SERVICE_NAME=DIRECTORY_MONITORING
+      - LOG_LEVEL=DEBUG
+      - WATCHING_DIR_PATH=/app/test_dir/input
+      - OUTPUT_DIR_PATH=/app/test_dir/output
+      - SYSTEM_DEPENDED_FILEPATH_DELIMITER=/
+      - DB_CONNECTION_URL=postgres://as_2024:2024_as_2024@host.docker.internal:5432
+    command: [ "./start.sh" ]
+    volumes:
+      - ./test_dir:/app/test_dir
+...

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "scan_id",
+    "resource_id",
+    "resource_type",
+    "highest_severity",
+    "total_findings",
+    "scan_date_timestamp"
+  ],
+  "properties": {
+    "scan_id": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "resource_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "scan_date_timestamp": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "repository",
+        "image"
+      ]
+    },
+    "highest_severity": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "total_findings": {
+      "type": "integer",
+      "minimum": 0
+    }
+  }
+}
